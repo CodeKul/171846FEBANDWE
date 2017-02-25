@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button btnOkay = (Button) findViewById(R.id.btnOkay);
         //btnOkay.setOnClickListener(new Click());
-        btnOkay.setOnClickListener(new View.OnClickListener() {
+        /*btnOkay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -26,7 +26,19 @@ public class MainActivity extends AppCompatActivity {
                 String data = edtAnyName.getText().toString();
                 edtAnyName.setText(data.toUpperCase());
             }
-        });
+        });*/
+
+      /*  btnOkay.setOnClickListener( view -> {
+            makeUpperCase(view);
+        });*/
+
+        btnOkay.setOnClickListener(this::makeUpperCase); // method reference
+    }
+
+    private void makeUpperCase(View view) {
+        EditText edtAnyName = (EditText) findViewById(R.id.edtAnyName);
+        String data = edtAnyName.getText().toString();
+        edtAnyName.setText(data.toUpperCase());
     }
 
     private class Click implements View.OnClickListener {
