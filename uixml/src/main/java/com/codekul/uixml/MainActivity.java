@@ -17,7 +17,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button btnOkay = (Button) findViewById(R.id.btnOkay);
-        btnOkay.setOnClickListener(new Click());
+        //btnOkay.setOnClickListener(new Click());
+        btnOkay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                EditText edtAnyName = (EditText) findViewById(R.id.edtAnyName);
+                String data = edtAnyName.getText().toString();
+                edtAnyName.setText(data.toUpperCase());
+            }
+        });
     }
 
     private class Click implements View.OnClickListener {
