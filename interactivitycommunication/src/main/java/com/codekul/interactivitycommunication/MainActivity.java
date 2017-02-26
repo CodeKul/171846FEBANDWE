@@ -1,5 +1,6 @@
 package com.codekul.interactivitycommunication;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -14,15 +15,18 @@ public class MainActivity extends AppCompatActivity {
 
         Button btnAndroid = (Button)findViewById(R.id.btnAndroid);
         btnAndroid.setOnClickListener(this::onAndroid);
-
         findViewById(R.id.btnMango).setOnClickListener(this::onMango);
     }
 
     private void onMango(View view) {
-
+        Class cls = ProducerActivity.class;
+        Intent intent = new Intent(this,cls);
+        startActivity(intent);
     }
 
     private void onAndroid(View view) {
-
+        Class cls = ProducerActivity.class;
+        Intent intent = new Intent(this,cls);
+        startActivity(intent);
     }
 }
