@@ -1,1 +1,1 @@
-include ':app', ':uixml', ':relativelayout', ':viewproperties', ':nestedlayout'
+include ':app', ':uixml', ':relativelayout', ':viewproperties', ':nestedlayout', ':interactivitycommunication'
