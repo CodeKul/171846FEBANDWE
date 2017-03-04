@@ -1,1 +1,1 @@
-include ':app', ':uixml', ':relativelayout', ':viewproperties', ':nestedlayout', ':interactivitycommunication', ':compoundviews'
+include ':app', ':uixml', ':relativelayout', ':viewproperties', ':nestedlayout', ':interactivitycommunication', ':compoundviews', ':customviews', ':bouncingball'
