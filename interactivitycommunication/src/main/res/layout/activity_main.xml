@@ -23,10 +23,16 @@
         android:text="Android"
         android:layout_below="@id/btnMango"/>
     
-    <FrameLayout
+    <TextView
+        android:id="@+id/txtRes"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_below="@id/btnAndroid"
-        android:background="#FF4081"/>
+        android:background="#FF4081"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:text="codekul.com"
+        android:textSize="30sp"
+        />
 
 </RelativeLayout>
