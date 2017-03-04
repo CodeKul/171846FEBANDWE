@@ -16,14 +16,16 @@
         android:layout_height="wrap_content">
 
         <RadioButton
+            android:id="@+id/radOne"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Red"/>
+            />
 
         <RadioButton
+            android:id="@+id/radTwo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Blue"/>
+           />
     </RadioGroup>
     
     <Button

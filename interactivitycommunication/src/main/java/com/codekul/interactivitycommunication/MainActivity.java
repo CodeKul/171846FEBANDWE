@@ -13,20 +13,33 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btnAndroid = (Button)findViewById(R.id.btnAndroid);
+        Button btnAndroid = (Button) findViewById(R.id.btnAndroid);
         btnAndroid.setOnClickListener(this::onAndroid);
         findViewById(R.id.btnMango).setOnClickListener(this::onMango);
     }
 
     private void onMango(View view) {
         Class cls = ProducerActivity.class;
-        Intent intent = new Intent(this,cls);
+        Intent intent = new Intent(this, cls);
+
+        Bundle bundle = new Bundle();
+        bundle.putString("keyOne", "Mango1" );
+        bundle.putString("keyTwo", "Mango2" );
+
+        intent.putExtras(bundle);
+
         startActivity(intent);
     }
 
     private void onAndroid(View view) {
         Class cls = ProducerActivity.class;
-        Intent intent = new Intent(this,cls);
+        Intent intent = new Intent(this, cls);
+
+        Bundle bundle = new Bundle();
+        bundle.putString("keyOne", "android1");
+        bundle.putString("keyTwo", "android2");
+        intent.putExtras(bundle);
+
         startActivity(intent);
     }
 }
