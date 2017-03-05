@@ -29,4 +29,7 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:25.1.1'
     testCompile 'junit:junit:4.12'
+    compile group: 'io.reactivex.rxjava2', name: 'rxjava', version: '2.0.6'
+    compile group: 'io.reactivex.rxjava2', name: 'rxandroid', version: '2.0.1'
+
 }
