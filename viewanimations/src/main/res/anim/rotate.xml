@@ -2,10 +2,19 @@
 <set xmlns:android="http://schemas.android.com/apk/res/android">
 
     <rotate
-        android:duration="1600"
+        android:duration="2000"
         android:fromDegrees="0"
         android:interpolator="@android:anim/linear_interpolator"
         android:pivotX="50%"
         android:pivotY="50%"
         android:toDegrees="358" />
+
+    <rotate
+        android:startOffset="2000"
+        android:duration="500"
+        android:fromDegrees="358"
+        android:interpolator="@android:anim/linear_interpolator"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toDegrees="0" />
 </set>

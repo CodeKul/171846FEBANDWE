@@ -28,5 +28,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Rotate"/>
+
+        <Button
+            android:id="@+id/btnZoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zoom"/>
+
+        <Button
+            android:id="@+id/btnMixed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mixed"/>
     </LinearLayout>
 </RelativeLayout>
