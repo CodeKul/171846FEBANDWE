@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/WeekEndApp.iml" filepath="$PROJECT_DIR$/WeekEndApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/activitylifecycle/activitylifecycle.iml" filepath="$PROJECT_DIR$/activitylifecycle/activitylifecycle.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/bouncingball/bouncingball.iml" filepath="$PROJECT_DIR$/bouncingball/bouncingball.iml" />
       <module fileurl="file://$PROJECT_DIR$/compoundviews/compoundviews.iml" filepath="$PROJECT_DIR$/compoundviews/compoundviews.iml" />
