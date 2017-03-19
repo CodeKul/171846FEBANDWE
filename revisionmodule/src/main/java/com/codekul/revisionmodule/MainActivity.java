@@ -31,4 +31,8 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(layout);
     }
+
+    private void viaXml() {
+        setContentView(R.layout.activity_main);
+    }
 }
