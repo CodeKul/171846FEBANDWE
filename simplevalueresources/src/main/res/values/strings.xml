@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SimpleValueResources</string>
+    <string name="txtNm">codekul.com</string>
+    <color name="bloodRed">#ff0000</color>
+
+    <string-array name="cities">
+        <item>Pune</item>
+        <item>Mumbai</item>
+        <item>Sangli</item>
+        <item>Nagpur</item>
+    </string-array>
+</resources>
