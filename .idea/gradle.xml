@@ -9,6 +9,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/activitylifecycle" />
+            <option value="$PROJECT_DIR$/activitystatemanagement" />
+            <option value="$PROJECT_DIR$/activitystatemanagementandroid" />
+            <option value="$PROJECT_DIR$/activitystatemanagementown" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/bouncingball" />
             <option value="$PROJECT_DIR$/compoundviews" />
