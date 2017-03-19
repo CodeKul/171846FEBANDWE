@@ -11,8 +11,18 @@
     tools:context="com.codekul.revisionmodule.MainActivity"
     android:orientation="vertical">
 
+    <EditText
+        android:id="@+id/edtUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="User Name"/>
+
     <Button
-        android:layout_width="500dp"
-        android:layout_height="150dp"
+        android:id="@+id/btnOkay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Okay"
         />
+
+
 </LinearLayout>
