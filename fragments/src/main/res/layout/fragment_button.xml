@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.codekul.fragments.ButtonFragment"
+    android:weightSum="1"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/btnRed"
+        android:layout_weight="0.5"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_red_dark"
+        android:layout_margin="@dimen/mgn"
+         />
+
+    <TextView
+        android:id="@+id/btnGreen"
+        android:layout_weight="0.5"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_green_dark"
+        android:layout_margin="@dimen/mgn"
+        />
+
+</LinearLayout>
