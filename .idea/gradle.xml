@@ -16,6 +16,7 @@
             <option value="$PROJECT_DIR$/bouncingball" />
             <option value="$PROJECT_DIR$/compoundviews" />
             <option value="$PROJECT_DIR$/customviews" />
+            <option value="$PROJECT_DIR$/dialogs" />
             <option value="$PROJECT_DIR$/fragments" />
             <option value="$PROJECT_DIR$/gridview" />
             <option value="$PROJECT_DIR$/interactivitycommunication" />
@@ -24,6 +25,8 @@
             <option value="$PROJECT_DIR$/relativelayout" />
             <option value="$PROJECT_DIR$/revisionmodule" />
             <option value="$PROJECT_DIR$/simplevalueresources" />
+            <option value="$PROJECT_DIR$/statusbarnotifications" />
+            <option value="$PROJECT_DIR$/toasts" />
             <option value="$PROJECT_DIR$/uixml" />
             <option value="$PROJECT_DIR$/viewanimations" />
             <option value="$PROJECT_DIR$/viewproperties" />
