@@ -1,7 +1,9 @@
 package com.codekul.dialogs;
 
 
+import android.app.DatePickerDialog;
 import android.app.Dialog;
+import android.app.TimePickerDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -28,8 +30,9 @@ public class AppDialog extends DialogFragment {
 
         Dialog dialog = new Dialog(getActivity());
 
-        if (getTag().equals(AppDialog.TAG_ALERT))
-            dialog = alert();
+        if (getTag().equals(TAG_ALERT)) dialog = alert();
+        else if (getTag().equals(TAG_DATE)) dialog = datePicker();
+        else if (getTag().equals(TAG_TIME)) dialog = timePicker();
 
         return dialog;
     }
@@ -43,8 +46,16 @@ public class AppDialog extends DialogFragment {
                 .setNegativeButton(R.string.btnNo, (dialog, which) -> mt("No"));
         return builder.create();
     }
-    
-    private void mt(String msg){
+
+    private DatePickerDialog datePicker() {
+        return new DatePickerDialog(getActivity(), (view, year, month, dayOfMonth) -> mt("" + dayOfMonth + " - " + (month + 1) + " - " + year), 2017, 2, 25);
+    }
+
+    private TimePickerDialog timePicker() {
+        return new TimePickerDialog(getActivity(), (view, hourOfDay, minute) -> mt("" + hourOfDay + " : " + minute), 12, 05, false);
+    }
+
+    private void mt(String msg) {
         Toast.makeText(getActivity(), msg, Toast.LENGTH_SHORT).show();
     }
 }
