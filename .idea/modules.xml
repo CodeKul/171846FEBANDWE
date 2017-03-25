@@ -20,6 +20,7 @@
       <module fileurl="file://$PROJECT_DIR$/relativelayout/relativelayout.iml" filepath="$PROJECT_DIR$/relativelayout/relativelayout.iml" />
       <module fileurl="file://$PROJECT_DIR$/revisionmodule/revisionmodule.iml" filepath="$PROJECT_DIR$/revisionmodule/revisionmodule.iml" />
       <module fileurl="file://$PROJECT_DIR$/simplevalueresources/simplevalueresources.iml" filepath="$PROJECT_DIR$/simplevalueresources/simplevalueresources.iml" />
+      <module fileurl="file://$PROJECT_DIR$/statusbar/statusbar.iml" filepath="$PROJECT_DIR$/statusbar/statusbar.iml" />
       <module fileurl="file://$PROJECT_DIR$/statusbarnotifications/statusbarnotifications.iml" filepath="$PROJECT_DIR$/statusbarnotifications/statusbarnotifications.iml" />
       <module fileurl="file://$PROJECT_DIR$/toasts/toasts.iml" filepath="$PROJECT_DIR$/toasts/toasts.iml" />
       <module fileurl="file://$PROJECT_DIR$/uixml/uixml.iml" filepath="$PROJECT_DIR$/uixml/uixml.iml" />
