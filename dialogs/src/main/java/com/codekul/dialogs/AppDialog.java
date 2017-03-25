@@ -3,6 +3,7 @@ package com.codekul.dialogs;
 
 import android.app.DatePickerDialog;
 import android.app.Dialog;
+import android.app.ProgressDialog;
 import android.app.TimePickerDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
@@ -33,6 +34,7 @@ public class AppDialog extends DialogFragment {
         if (getTag().equals(TAG_ALERT)) dialog = alert();
         else if (getTag().equals(TAG_DATE)) dialog = datePicker();
         else if (getTag().equals(TAG_TIME)) dialog = timePicker();
+        else if(getTag().equals(TAG_PROGRESS)) dialog = progressDialog();
 
         return dialog;
     }
@@ -53,6 +55,14 @@ public class AppDialog extends DialogFragment {
 
     private TimePickerDialog timePicker() {
         return new TimePickerDialog(getActivity(), (view, hourOfDay, minute) -> mt("" + hourOfDay + " : " + minute), 12, 05, false);
+    }
+
+    private ProgressDialog progressDialog() {
+        ProgressDialog dialog = new ProgressDialog(getActivity());
+        dialog.setTitle(getString(R.string.title));
+        dialog.setMessage(getString(R.string.msg));
+        dialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
+        return dialog;
     }
 
     private void mt(String msg) {
