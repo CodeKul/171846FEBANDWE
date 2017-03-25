@@ -5,12 +5,12 @@ import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.app.TimePickerDialog;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AlertDialog;
+import android.view.View;
 import android.widget.Toast;
 
 
@@ -35,6 +35,7 @@ public class AppDialog extends DialogFragment {
         else if (getTag().equals(TAG_DATE)) dialog = datePicker();
         else if (getTag().equals(TAG_TIME)) dialog = timePicker();
         else if(getTag().equals(TAG_PROGRESS)) dialog = progressDialog();
+        else dialog = custom();
 
         return dialog;
     }
@@ -63,6 +64,18 @@ public class AppDialog extends DialogFragment {
         dialog.setMessage(getString(R.string.msg));
         dialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
         return dialog;
+    }
+
+    private Dialog custom() {
+
+        final View view = getActivity()
+                .getLayoutInflater().inflate(R.layout.custom_dialog, null, false);
+        view.findViewById(R.id.btnOkay).setOnClickListener( v -> alert().show());
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        builder.setView(view);
+
+        return builder.create();
     }
 
     private void mt(String msg) {
