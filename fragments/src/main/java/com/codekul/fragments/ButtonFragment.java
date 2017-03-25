@@ -1,6 +1,7 @@
 package com.codekul.fragments;
 
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -24,9 +25,9 @@ public class ButtonFragment extends Fragment {
                              Bundle savedInstanceState) {
         final View view = inflater.inflate(R.layout.fragment_button, container, false);
         view.findViewById(R.id.btnRed)
-                .setOnClickListener(v -> ((MainActivity) getActivity()).loadFragment(new RedFragment()));
+                .setOnClickListener(v -> ((MainActivity) getActivity()).loadFragment(ColorFragment.getInstance(Color.RED)));
         view.findViewById(R.id.btnGreen)
-                .setOnClickListener(v -> ((MainActivity) getActivity()).loadFragment(new GreenFragment()));
+                .setOnClickListener(v -> ((MainActivity) getActivity()).loadFragment(ColorFragment.getInstance(Color.GREEN)));
         return view;
     }
 }
