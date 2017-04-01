@@ -9,6 +9,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import io.reactivex.Observable;
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.schedulers.Schedulers;
+
 public class MainActivity extends AppCompatActivity {
 
     private Handler handler;
@@ -22,7 +26,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void startCounter(View view) {
-        new MyTask().execute(0,100/*params*/);
+       // new MyTask().execute(0,100/*params*/);
+
+        counterObservable()
+                .subscribeOn(Schedulers.newThread())
+                .observeOn(AndroidSchedulers.mainThread())
+                .doOnNext( num -> ((TextView) findViewById(R.id.textCntr)).setText(String.valueOf(num)) )
+                .doOnComplete( () -> {})
+                .subscribe();
     }
 
     private void counter() {
@@ -110,5 +121,15 @@ public class MainActivity extends AppCompatActivity {
             //ui thread
             ((TextView) findViewById(R.id.textCntr)).setText(values[0]);
         }
+    }
+
+    private Observable<String> counterObservable() {
+       return Observable.create(sub -> {
+            for(int i = 0 ;i < 100 ; i++){
+                Thread.sleep(500);
+                sub.onNext(String.valueOf(i));
+            }
+            sub.onComplete();
+       });
     }
 }
