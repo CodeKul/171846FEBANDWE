@@ -19,9 +19,10 @@
         <activity android:name=".SportsActivity" >
             <intent-filter>
                 <action android:name="com.codekul.action.SPORTS"/>
+                <action android:name="android.intent.action.VIEW"/>
                 <action android:name="com.codekul.action.COMMON"/>
                 <category android:name="android.intent.category.DEFAULT"/>
-                <data android:scheme="tel"/>
+                <data android:scheme="http"/>
             </intent-filter>
         </activity>
         <activity android:name=".NewsActivity" >
@@ -38,4 +39,5 @@
         </activity>
     </application>
 
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
 </manifest>
