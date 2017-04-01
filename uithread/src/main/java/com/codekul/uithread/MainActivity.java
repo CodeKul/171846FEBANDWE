@@ -1,5 +1,6 @@
 package com.codekul.uithread;
 
+import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.os.Handler;
 import android.os.Looper;
@@ -71,10 +72,13 @@ public class MainActivity extends AppCompatActivity {
 
     private class MyTask extends AsyncTask<Integer/*prams*/, String/*progress*/, Boolean/*result*/> {
 
+        private ProgressDialog pd;
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
             //Ui thread
+
+            pd = ProgressDialog.show(MainActivity.this,"Counter","Counting");
         }
 
         @Override
@@ -96,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(Boolean aBoolean/*result*/) {
             super.onPostExecute(aBoolean);
-
+            pd.dismiss();
             //Ui thread
         }
 
