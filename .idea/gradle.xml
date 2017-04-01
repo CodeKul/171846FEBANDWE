@@ -27,7 +27,9 @@
             <option value="$PROJECT_DIR$/simplevalueresources" />
             <option value="$PROJECT_DIR$/statusbar" />
             <option value="$PROJECT_DIR$/statusbarnotifications" />
+            <option value="$PROJECT_DIR$/swipetab" />
             <option value="$PROJECT_DIR$/toasts" />
+            <option value="$PROJECT_DIR$/uithread" />
             <option value="$PROJECT_DIR$/uixml" />
             <option value="$PROJECT_DIR$/viewanimations" />
             <option value="$PROJECT_DIR$/viewproperties" />
