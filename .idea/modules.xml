@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/activitystatemanagementown/activitystatemanagementown.iml" filepath="$PROJECT_DIR$/activitystatemanagementown/activitystatemanagementown.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/bouncingball/bouncingball.iml" filepath="$PROJECT_DIR$/bouncingball/bouncingball.iml" />
+      <module fileurl="file://$PROJECT_DIR$/broadcastreceivers/broadcastreceivers.iml" filepath="$PROJECT_DIR$/broadcastreceivers/broadcastreceivers.iml" />
       <module fileurl="file://$PROJECT_DIR$/compoundviews/compoundviews.iml" filepath="$PROJECT_DIR$/compoundviews/compoundviews.iml" />
       <module fileurl="file://$PROJECT_DIR$/customviews/customviews.iml" filepath="$PROJECT_DIR$/customviews/customviews.iml" />
       <module fileurl="file://$PROJECT_DIR$/dialogs/dialogs.iml" filepath="$PROJECT_DIR$/dialogs/dialogs.iml" />
