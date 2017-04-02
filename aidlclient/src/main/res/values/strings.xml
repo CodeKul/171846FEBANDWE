@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AidlClient</string>
+    <string name="btnBind">Bind</string>
+    <string name="btnDay">Day</string>
+</resources>

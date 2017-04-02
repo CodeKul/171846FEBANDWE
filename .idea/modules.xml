@@ -7,6 +7,8 @@
       <module fileurl="file://$PROJECT_DIR$/activitystatemanagement/activitystatemanagement.iml" filepath="$PROJECT_DIR$/activitystatemanagement/activitystatemanagement.iml" />
       <module fileurl="file://$PROJECT_DIR$/activitystatemanagementandroid/activitystatemanagementandroid.iml" filepath="$PROJECT_DIR$/activitystatemanagementandroid/activitystatemanagementandroid.iml" />
       <module fileurl="file://$PROJECT_DIR$/activitystatemanagementown/activitystatemanagementown.iml" filepath="$PROJECT_DIR$/activitystatemanagementown/activitystatemanagementown.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aidlclient/aidlclient.iml" filepath="$PROJECT_DIR$/aidlclient/aidlclient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aidlserver/aidlserver.iml" filepath="$PROJECT_DIR$/aidlserver/aidlserver.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/bouncingball/bouncingball.iml" filepath="$PROJECT_DIR$/bouncingball/bouncingball.iml" />
       <module fileurl="file://$PROJECT_DIR$/broadcastreceivers/broadcastreceivers.iml" filepath="$PROJECT_DIR$/broadcastreceivers/broadcastreceivers.iml" />
