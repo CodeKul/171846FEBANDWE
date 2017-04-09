@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        readContacts();
+        customProvider();
     }
 
     private void readContacts() {
@@ -36,6 +36,27 @@ public class MainActivity extends AppCompatActivity {
         while(cursor.moveToNext()) {
             String name = cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME));
             String num = cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));
+            dataSet.add(name +"\n"+num);
+        }
+
+        ((ListView)findViewById(R.id.listData)).setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, dataSet));
+        cursor.close();
+    }
+
+    private void customProvider() {
+
+        List<String> dataSet = new ArrayList<>();
+
+        Uri uri = Uri.parse("content://com.codekul.provider.ACCESS");
+        String[] projection = null;
+        String selection = null;
+        String[] selectionArgs = null;
+        String sortOrder = null;
+        ContentResolver resolver = getContentResolver();
+        Cursor cursor = resolver.query(uri, projection, selection, selectionArgs, sortOrder);
+        while(cursor.moveToNext()) {
+            String name = cursor.getString(0);
+            String num = cursor.getString(1);
             dataSet.add(name +"\n"+num);
         }
 
