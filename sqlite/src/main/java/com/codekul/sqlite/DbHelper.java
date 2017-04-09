@@ -16,7 +16,7 @@ public class DbHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("create table " + Db.TabMyInfo.TAB_NAME + " ( " + Db.TabMyInfo.COL_NAME + " text, " + Db.TabMyInfo.COL_CARD_NUM + "text)");
+        db.execSQL("create table " + Db.TabMyInfo.TAB_NAME + " ( " + Db.TabMyInfo.COL_NAME + " text, " + Db.TabMyInfo.COL_CARD_NUM + " text)");
     }
 
     @Override
