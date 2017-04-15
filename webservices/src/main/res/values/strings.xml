@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WebServices</string>
+    <string name="edtCity">City</string>
+    <string name="btnOkay">Okay</string>
+</resources>
