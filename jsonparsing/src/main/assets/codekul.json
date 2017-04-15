@@ -1,0 +1,15 @@
+{
+  "name" : "codekul.com",
+  "rating" : "5 star",
+  "popularity" : 90,
+  "courses" : [
+    "Android",
+    "Angular 2",
+    "Spring",
+    "Java"
+  ],
+  "infra" : {
+    "tables" : true,
+    "chair" : 50
+  }
+}
