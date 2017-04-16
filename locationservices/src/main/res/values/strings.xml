@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">LocationServices</string>
+    <string name="btnGeocoder">GeoCoder</string>
+    <string name="btnProviders">Providers</string>
 </resources>

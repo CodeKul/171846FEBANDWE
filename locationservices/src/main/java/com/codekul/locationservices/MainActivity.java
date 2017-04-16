@@ -1,7 +1,9 @@
 package com.codekul.locationservices;
 
 import android.location.Address;
+import android.location.Criteria;
 import android.location.Geocoder;
+import android.location.LocationManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -15,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     public static final String TAG = MainActivity.class.getCanonicalName();
     private Geocoder geocoder;
+    private LocationManager manager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +25,28 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         geocoder = new Geocoder(this);
+
+        manager = (LocationManager) getSystemService(LOCATION_SERVICE);
+    }
+
+    private void locationProviders() {
+
+        List<String> providers = manager.getAllProviders();
+        for (String provider : providers) {
+            Log.i(TAG, "Provider - "+provider);
+        }
+    }
+
+    private void bestProvider() {
+
+        Criteria criteria = new Criteria();
+        criteria.setAccuracy(Criteria.ACCURACY_FINE);
+        criteria.setAltitudeRequired(true);
+        criteria.setCostAllowed(true);
+        criteria.setSpeedRequired(true);
+
+        String bestProvider = manager.getBestProvider(criteria, false);
+        Log.i(TAG, "Best Provider "+bestProvider);
     }
 
     public void onGeoCode(View view) {
@@ -56,5 +81,14 @@ public class MainActivity extends AppCompatActivity {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public void providers(View view) {
+        locationProviders();
+        bestProvider();
+    }
+
+    private void currentLocation() {
+
     }
 }
