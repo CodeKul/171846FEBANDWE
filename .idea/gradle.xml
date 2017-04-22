@@ -42,6 +42,7 @@
             <option value="$PROJECT_DIR$/statusbar" />
             <option value="$PROJECT_DIR$/statusbarnotifications" />
             <option value="$PROJECT_DIR$/swipetab" />
+            <option value="$PROJECT_DIR$/telephony" />
             <option value="$PROJECT_DIR$/toasts" />
             <option value="$PROJECT_DIR$/uithread" />
             <option value="$PROJECT_DIR$/uixml" />
