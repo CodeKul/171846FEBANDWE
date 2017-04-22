@@ -43,6 +43,7 @@
       <module fileurl="file://$PROJECT_DIR$/viewanimations/viewanimations.iml" filepath="$PROJECT_DIR$/viewanimations/viewanimations.iml" />
       <module fileurl="file://$PROJECT_DIR$/viewproperties/viewproperties.iml" filepath="$PROJECT_DIR$/viewproperties/viewproperties.iml" />
       <module fileurl="file://$PROJECT_DIR$/webservices/webservices.iml" filepath="$PROJECT_DIR$/webservices/webservices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wifi/wifi.iml" filepath="$PROJECT_DIR$/wifi/wifi.iml" />
     </modules>
   </component>
 </project>
