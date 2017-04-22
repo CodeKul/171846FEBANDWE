@@ -29,6 +29,7 @@
       <module fileurl="file://$PROJECT_DIR$/nestedlayout/nestedlayout.iml" filepath="$PROJECT_DIR$/nestedlayout/nestedlayout.iml" />
       <module fileurl="file://$PROJECT_DIR$/relativelayout/relativelayout.iml" filepath="$PROJECT_DIR$/relativelayout/relativelayout.iml" />
       <module fileurl="file://$PROJECT_DIR$/revisionmodule/revisionmodule.iml" filepath="$PROJECT_DIR$/revisionmodule/revisionmodule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sensors/sensors.iml" filepath="$PROJECT_DIR$/sensors/sensors.iml" />
       <module fileurl="file://$PROJECT_DIR$/services/services.iml" filepath="$PROJECT_DIR$/services/services.iml" />
       <module fileurl="file://$PROJECT_DIR$/sharedprefs/sharedprefs.iml" filepath="$PROJECT_DIR$/sharedprefs/sharedprefs.iml" />
       <module fileurl="file://$PROJECT_DIR$/simplevalueresources/simplevalueresources.iml" filepath="$PROJECT_DIR$/simplevalueresources/simplevalueresources.iml" />
