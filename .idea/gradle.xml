@@ -15,6 +15,7 @@
             <option value="$PROJECT_DIR$/aidlclient" />
             <option value="$PROJECT_DIR$/aidlserver" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/bluetooth" />
             <option value="$PROJECT_DIR$/bouncingball" />
             <option value="$PROJECT_DIR$/broadcastreceivers" />
             <option value="$PROJECT_DIR$/compoundviews" />
@@ -31,6 +32,9 @@
             <option value="$PROJECT_DIR$/jsonparsing" />
             <option value="$PROJECT_DIR$/listview" />
             <option value="$PROJECT_DIR$/locationservices" />
+            <option value="$PROJECT_DIR$/materialdesign" />
+            <option value="$PROJECT_DIR$/navdrawer" />
+            <option value="$PROJECT_DIR$/navigationdrawer" />
             <option value="$PROJECT_DIR$/nestedlayout" />
             <option value="$PROJECT_DIR$/relativelayout" />
             <option value="$PROJECT_DIR$/revisionmodule" />
